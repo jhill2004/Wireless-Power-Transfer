@@ -1,5 +1,5 @@
 # Wireless-Power-Transfer
-Create a wireless power transfer transmitter and emitter PCB using Altium Designer.
+Create a wireless power transfer transmitter and reciever PCB using Altium Designer.
 
 Model 1: Uses 555 timer to oscillate at resonance frequency of LC circuit to transmit power via magnetic resonance coupling.
 
