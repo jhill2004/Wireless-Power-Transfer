@@ -3,7 +3,14 @@ Create a wireless power transfer transmitter and reciever PCB using Altium Desig
 
 Model 1: Uses 555 timer to oscillate at resonance frequency of LC circuit to transmit power via magnetic resonance coupling.
 
-Model 2: Uses PLL feedback system to auto oscillate at resonance frequency of LC circuit to transmit power via magnetic resonance coupling.
+Model 2: Uses PLL feedback system to auto oscillate at resonance frequency of LC circuit to transmit power via magnetic resonance coupling. It also uses a 555 to make sure pulses of an appropriate length are inputted into the LC circuit. The resonant waveform is inputted to a comparator to make it a squarewave before being used as the reference waveform of the PLL in order to increase preformance.
+Due to the PLL feedback system of model 2, the exact resonance frequency doesn't need to be known for the circuit design. However, an approximate of the resonance frequency can be used to help determine the appropriate length of a pulse. To help approximate the inductance of the trace pcb, this link was used: https://www.66pacific.com/calculators/coil-inductance-calculator.aspx. 
+
+Model 2 Transmitter:
+![image](https://github.com/jhill2004/Wireless-Power-Transfer/assets/97457539/f90bf1df-1ab9-466d-902c-652203e0dee1)
+![image](https://github.com/jhill2004/Wireless-Power-Transfer/assets/97457539/13589d8a-f1c2-4ed6-b540-ab77faa8eba5)
+![image](https://github.com/jhill2004/Wireless-Power-Transfer/assets/97457539/d0afbd66-637f-405a-85a5-85cb2d7f57b3)
+![image](https://github.com/jhill2004/Wireless-Power-Transfer/assets/97457539/4379948e-e6ef-4a6f-b74b-3a3d34c19631)
 
 Model 1 Transmitter:
 ![image](https://github.com/jhill2004/Wireless-Power-Transfer/assets/97457539/03aaa2aa-1d35-42fd-b245-2cef465f3a25)
